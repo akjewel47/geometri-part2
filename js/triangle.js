@@ -92,3 +92,20 @@ function calculatePentagonAria() {
  const pentagonFormula = 0.5 * pentagonP * pentagonB;
  console.log("pentagonFormula:", pentagonFormula)
 }
+
+// Ellipse card calculate
+
+function calculateEllipseAria(){
+ const EllipseAriaInputA = document.getElementById('Ellipse-a')
+ const EllipseValuA = EllipseAriaInputA.value;
+ const EllipseA = parseFloat(EllipseValuA);
+ console.log('EllipseA:',EllipseA)
+
+ const EllipseAriaInputB = document.getElementById('Ellipse-b');
+ const EllipseValueB = EllipseAriaInputB.value;
+ const EllipseB = parseFloat(EllipseValueB);
+ console.log('EllipseB', EllipseB)
+
+ const EllipseFormula = 3.1416 * EllipseA * EllipseB;
+ console.log('EllipseNumber:', EllipseFormula);
+}
