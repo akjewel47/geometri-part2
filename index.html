@@ -20,7 +20,7 @@
    <!-- shap card container -->
    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     <!-- card Triangle  -->
-    <div class="card card-compact bg-base-100 w-96 shadow-xl">
+    <div class="card card-compact bg-base-100 w-96 shadow-xl ">
      <figure>
       <img src="images/triangle.png" alt="Shoes" />
      </figure>
@@ -111,7 +111,29 @@
       </div>
      </div>
     </div>
- 
+    <!-- card pentagon-->
+    <div class="card card-compact bg-base-100 w-96 shadow-xl bg-[#69C7F0]">
+     <figure>
+      <img src="images/pentagon.png" alt="Shoes" />
+     </figure>
+     <div class="card-body">
+      <h2 class="card-title flex justify-center">Pentagon</h2>
+      <p class="text-center">Area (A) = 0.5 X p X b</p>
+      <h3 class="text-center">p = 16cm, b = 8cm</h3>
+      <div class="text-center">
+       <p class="text-2xl">Area: <span id="pentagon-aria"></span><span> cm <sup>2</sup></span></p>
+      </div>
+      <div class="flex">
+       <input class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="p" id="pentagon-p"><span
+        class="mt-3 mr-4 ml-2">cm</span>
+       <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-b" placeholder="b"><span
+        class="mt-3 mr-4 ml-2">cm</span>
+      </div>
+      <div class="card-actions">
+       <button onclick="calculatePentagonAria()" class="btn btn-primary w-full">Calculate</button>
+      </div>
+     </div>
+    </div>
 
 
     <!-- area calculation container-->
