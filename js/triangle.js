@@ -57,3 +57,22 @@ function calculateparallelogramAria() {
  parallelogramAria.innerText = parallelogram;
 
 }
+
+// Rhombus card calculate
+function calculateRhombusAria(){
+const RhombusInputD1 = document.getElementById('Rhombus-d1')
+const RhombusValueD1 = RhombusInputD1.value;
+const RhombusD1 = parseFloat(RhombusValueD1);
+console.log('d1:',RhombusD1)
+
+const RhombusInputD2 = document.getElementById('Rhombus-d2');
+const RhombusValueD2 = RhombusInputD2.value;
+const RhombusD2 = parseFloat(RhombusValueD2);
+console.log('d2:', RhombusD2)
+
+const RhombusFormula = 0.5 * RhombusD1 * RhombusD2;
+console.log('Rhombus:', RhombusFormula)
+
+const RhombusAria = document.getElementById('Rhombus-aria')
+RhombusAria.innerText = RhombusFormula;
+}
