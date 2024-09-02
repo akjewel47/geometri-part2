@@ -55,7 +55,7 @@
       <div class="flex">
        <input class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="W" id="width"><span
         class="mt-3 mr-4 ml-2">cm</span>
-       <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="lenth" placeholder="I"><span
+       <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="length" placeholder="I"><span
         class="mt-3 mr-4 ml-2">cm</span>
       </div>
       <div class="card-actions">
@@ -72,17 +72,26 @@
       <h2 class="card-title flex justify-center">Parallelogram</h2>
       <p class="text-center">Area (A) = b X h</p>
       <h3 class="text-center">b=10cm, h=12cm</h3>
-      <div class="card-actions justify-end">
-       <button class="btn btn-primary">Calculate</button>
+      <div class="text-center">
+       <p class="text-2xl">Area: <span id="parallelogram-aria"></span><span> cm <sup>2</sup></span></p>
+      </div>
+      <div class="flex">
+       <input class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b" id="ParallelogramBase"><span
+        class="mt-3 mr-4 ml-2">cm</span>
+       <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ParallelogramHeight" placeholder="h"><span
+        class="mt-3 mr-4 ml-2">cm</span>
+      </div>
+      <div class="card-actions">
+       <button onclick="calculateparallelogramAria()" class="btn btn-primary w-full">Calculate</button>
       </div>
      </div>
     </div>
-   
-   <!-- area calculation container-->
-   <div class="w-96 border-2 border-gray-700 rounded-md">
-    <h3 class="text-3xl text-center p-4">Area calculation</h3>
+
+    <!-- area calculation container-->
+    <div class="w-96 border-2 border-gray-700 rounded-md">
+     <h3 class="text-3xl text-center p-4">Area calculation</h3>
+    </div>
    </div>
-  </div>
  </main>
  <script src="js/triangle.js"></script>
 </body>
