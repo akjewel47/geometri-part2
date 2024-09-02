@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Geometry </title>
+ <!-- daisyUI / tailwindcss -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-8">
+ <header>
+
+ </header>
+ <main>
+  <!-- main content container -->
+  <div class="flex flex-col md:flex-row">
+   <!-- shap card container -->
+   <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <!-- card Triangle  -->
+    <div class="card card-compact bg-base-100 w-96 shadow-xl">
+     <figure>
+      <img src="images/triangle.png" alt="Shoes" />
+     </figure>
+     <div class="card-body">
+      <h2 class="card-title flex justify-center">Triangle</h2>
+      <p class="text-center">Area = 0.5 X b X h</p>
+      <div class="flex">
+       <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+       <span class="mt-3 mr-4 ml-2">cm</span>
+       <input id="triangle-height" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
+       <span class="mt-3 mr-4 ml-2">cm</span>
+      </div>
+      <div>
+       <p class="text-2xl">Area: <span id="triangle-area"></span><span>cm</span><sup>2</sup></p>
+      </div>
+      <div class="card-actions">
+       <button onclick="calculteTriangleAria()" class="btn btn-primary w-full">Calculate</button>
+      </div>
+     </div>
+    </div>
+    <!-- card Rectangle  -->
+    <div class="card card-compact bg-base-100 w-96 shadow-xl">
+     <div>
+      <img src="images/rectangle.png" alt="ractangle" />
+     </div>
+     <div class="card-body">
+      <h2 class="card-title flex justify-center">Rectangle </h2>
+      <p class="text-center">Area (A) = w X I</p>
+      <div>
+       <p class="text-2xl">Area: <span id="ractangle-area"></span><span>cm <sup>2</sup></span></p>
+      </div>
+      <div class="flex">
+       <input class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="W" id="width"><span
+        class="mt-3 mr-4 ml-2">cm</span>
+       <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="lenth" placeholder="I"><span
+        class="mt-3 mr-4 ml-2">cm</span>
+      </div>
+      <div class="card-actions">
+       <button onclick="calculateRactangleAria()" class="btn btn-primary w-full">Calculate</button>
+      </div>
+     </div>
+    </div>
+    <!-- card Parallelogram -->
+    <div class="card card-compact bg-base-100 w-96 shadow-xl">
+     <figure>
+      <img src="images/parallelogram.png" alt="Shoes" />
+     </figure>
+     <div class="card-body">
+      <h2 class="card-title flex justify-center">Parallelogram</h2>
+      <p class="text-center">Area (A) = b X h</p>
+      <h3 class="text-center">b=10cm, h=12cm</h3>
+      <div class="card-actions justify-end">
+       <button class="btn btn-primary">Calculate</button>
+      </div>
+     </div>
+    </div>
+   
+   <!-- area calculation container-->
+   <div class="w-96 border-2 border-gray-700 rounded-md">
+    <h3 class="text-3xl text-center p-4">Area calculation</h3>
+   </div>
+  </div>
+ </main>
+ <script src="js/triangle.js"></script>
+</body>
+
+</html>
